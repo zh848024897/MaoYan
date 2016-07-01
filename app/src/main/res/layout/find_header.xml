@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.atguigu.maoyan.view.HorizontalScrollViewPager
+        android:id="@+id/hsviewpager"
+        android:layout_width="match_parent"
+        android:layout_height="180dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/hsviewpager"
+        android:gravity="center_vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/ll_point_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/rg_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hsviewpager"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/rb_topic"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/topic_icon"
+            android:text="话题" />
+
+        <RadioButton
+            android:id="@+id/rb_message"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/message_icon"
+            android:text="资讯" />
+
+        <RadioButton
+            android:id="@+id/rb_movie"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/movie_icon"
+            android:text="影库" />
+
+
+        <RadioButton
+            android:id="@+id/rb_ticket"
+            style="@style/bottom_tag_style"
+            android:drawableTop="@drawable/ticket_icon"
+            android:text="票房" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:textSize="14sp"
+        android:padding="8dp"
+        android:background="#dddddd"
+        android:layout_below="@id/rg_main"
+        android:text="今天"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

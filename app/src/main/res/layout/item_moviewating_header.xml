@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_seach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:padding="8dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:src="@drawable/tv_seach_selector" />
+
+        <TextView
+            android:drawablePadding="8dp"
+            android:drawableLeft="@drawable/ic_sousuokuang"
+            android:textColor="@android:color/darker_gray"
+            android:layout_centerInParent="true"
+            android:text="找电影、影人、影院"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_prevue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dddddd"
+        android:padding="3dp"
+        android:text="预告片推荐"
+        android:textColor="@android:color/black" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+        android:background="#ffffff"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/ll_gallery_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tv_recent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#dddddd"
+        android:padding="3dp"
+        android:text="近期最受期待"
+        android:textColor="@android:color/black" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_gravity="center_vertical"
+        android:background="#ffffff"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:id="@+id/ll_gallery_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

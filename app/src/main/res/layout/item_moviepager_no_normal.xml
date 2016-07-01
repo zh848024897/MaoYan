@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:minHeight="100dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginLeft="30dp"
+        android:id="@+id/ll_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/tv_scm"
+            android:background="@drawable/btn_bg_selector"
+            android:text="票房"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_tickets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="首周2.8亿夺冠，已超首部内地总票房" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="20dp"
+            android:background="@drawable/btn_bg_selector"
+            android:text="专访"
+            android:textColor="@android:color/holo_orange_light"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/interview" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:textSize="12sp"
+        android:background="#dddddd"
+        android:textColor="@android:color/black"
+        android:padding="8dp"
+        android:text="美国待映"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+
+    <!--<TextView-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textColor="@android:color/holo_red_light"-->
+        <!--android:padding="8dp"-->
+        <!--android:text="查看全部待映影片"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+</LinearLayout>

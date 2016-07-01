@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="18dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_ciname_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="万达国际影城"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:text="40"
+            android:textColor="#ff0000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:textSize="10sp"
+            android:id="@+id/tv_price_follow"
+            android:layout_width="23dp"
+            android:layout_height="wrap_content"
+            android:text="元起" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="100dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="昌平区昌平区昌平区昌平区昌平区昌平区昌平区"
+            android:textColor="#99000000"
+            android:textSize="14sp" />
+
+        <TextView
+            android:textSize="14sp"
+            android:id="@+id/tv_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:text="4.7km" />
+
+    </RelativeLayout>
+
+</LinearLayout>
