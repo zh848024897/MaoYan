@@ -24,5 +24,7 @@ public class MainActivity extends FragmentActivity {
         FragmentTransaction ft = fm.beginTransaction();
         ft.replace(R.id.fl_content,new ContentFragment());
         ft.commit();
+
+        System.out.print("1");
     }
 }
